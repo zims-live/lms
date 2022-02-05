@@ -1,5 +1,10 @@
-# Created by https://www.toptal.com/developers/gitignore/api/scala,sbt
-# Edit at https://www.toptal.com/developers/gitignore?templates=scala,sbt
+# Created by https://www.toptal.com/developers/gitignore/api/scala,sbt,metals
+# Edit at https://www.toptal.com/developers/gitignore?templates=scala,sbt,metals
+
+### Metals ###
+.metals/
+.bloop/
+project/**/metals.sbt
 
 ### SBT ###
 # Simple Build Tool
@@ -22,5 +27,4 @@ project/plugins/project/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-# End of https://www.toptal.com/developers/gitignore/api/scala,sbt
-
+# End of https://www.toptal.com/developers/gitignore/api/scala,sbt,metals
