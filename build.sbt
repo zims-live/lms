@@ -1,5 +1,3 @@
-import Dependencies._
-
 ThisBuild / organization := "live.zims"
 ThisBuild / scalaVersion := "3.1.1"
 
@@ -37,11 +35,6 @@ lazy val commonScalacOptions = Seq(
 )
 
 lazy val dependencies = Seq(
-  libraryDependencies ++= Seq(
-    // main dependencies
-  ),
-  libraryDependencies ++= Seq(
-    org.scalatest.scalatest,
-    org.scalatestplus.`scalacheck-1-15`,
-  ).map(_ % Test),
+  libraryDependencies ++= Dependencies.root,
+  libraryDependencies ++= Dependencies.test.map(_ % Test),
 )
